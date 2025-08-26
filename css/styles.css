@@ -576,18 +576,20 @@ a {
   position: absolute;
   top: 50%;
   left: 50%;
-
   width: 408px;
   min-height: 584px;
+  padding-top: 72px;
+  padding-right: 24px;
+  padding-bottom: 24px;
+  padding-left: 24px;
   border-radius: 4px;
-
   transform: translate(-50%, -50%);
-
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12),
     0 2px 1px 0 rgba(0, 0, 0, 0.2);
   background-color: #fcfcfc;
-
-  transition: transform cubic-bezier(0.4, 0, 0.2, 1);
+  opacity: 1;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop:not(.is-open) .modal {
@@ -628,17 +630,11 @@ a {
 
 .modal-close-btn:hover .modal-close-icon,
 .modal-close-btn:focus .modal-close-icon {
-  fill: #404bbf;
+  fill: #ffffff;
 }
 
 .modal-input::placeholder {
   color: rgba(46, 47, 66, 0.4);
-}
-
-.modal {
-  opacity: 1;
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop:not(.is-open) .modal {
@@ -710,7 +706,7 @@ a {
 .modal-label {
   display: block;
   font-size: 12px;
-  line-height: 1.16;
+  line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8e8f99;
   margin-bottom: 4px;
