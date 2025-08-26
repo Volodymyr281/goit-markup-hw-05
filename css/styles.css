@@ -744,13 +744,14 @@ svg {
 }
 
 .modal-label {
-  display: block;
-  font-size: 12px;
+  display: block;               
+  font-size: 12px;              
   line-height: 1.17;
-  letter-spacing: 0.04em;
-  color: #8e8f99;
-  margin-bottom: 4px;
+  letter-spacing: 0.04em;       
+  color: #8e8f99;               
+  margin-bottom: 4px;           
 }
+
 
 .modal-input {
   display: flex;
@@ -758,7 +759,7 @@ svg {
   border: 1px solid #4d5ae5;
   border-radius: 4px;
   padding: 8px 16px;
-  width: 100%; /* замість жорсткої ширини */
+  width: 100%; 
   max-width: 360px;
 }
 
