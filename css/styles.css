@@ -594,6 +594,8 @@ a {
 
 .backdrop:not(.is-open) .modal {
   transform: translate(-50%, -100%);
+  transform: scale(0);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-close-btn {
@@ -668,6 +670,18 @@ a {
   left: 16px;
   top: 50%;
   transform: translateY(-50%);
+}
+
+input {
+  height: 40px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  background-color: transparent;
+  padding-left: 38px;
+  outline: transparent;
+}
+
+svg {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-field-input-wrapper {
