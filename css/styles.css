@@ -592,12 +592,6 @@ a {
     opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.backdrop:not(.is-open) .modal {
-  transform: translate(-50%, -100%);
-  transform: scale(0);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 .modal-close-btn {
   position: absolute;
   top: 24px;
@@ -662,7 +656,7 @@ a {
 }
 
 .form-field-wrapper {
-  margin-bottom: 16px;
+  margin-bottom: 8px;
 }
 
 .form-field-input-wrapper svg {
@@ -676,7 +670,9 @@ input {
   height: 40px;
   padding-left: 38px;
   background-color: transparent;
+
   outline: transparent;
+
   border: 1px solid rgba(46, 47, 66, 0.4);
 }
 
@@ -689,15 +685,17 @@ svg {
 }
 
 .form-field-text-input {
-  border: 1px solid #2e2f42;
+  border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
   width: 100%;
   max-width: 360px;
-  height: 8px 16px 8px 40px;
+  height: 40px; /* ✅ тест вимагає саме height */
+  padding: 8px 16px 8px 40px; /* ✅ відступи під іконку */
   font-size: 12px;
-  line-height: 1.16;
+  line-height: 1.17;
   letter-spacing: 0.04em;
-  outline: none;
+  background-color: transparent;
+  outline: transparent;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -706,6 +704,7 @@ svg {
   width: 100%;
   max-width: 360px;
   height: 120px;
+  margin-bottom: 16px;
 
   font-size: 12px;
   line-height: 1.17;
@@ -723,6 +722,7 @@ svg {
 
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1); /* 👈 плавна анімація */
 }
+
 .form-field-textarea:focus {
   border-color: #4d5ae5;
 }
@@ -744,14 +744,13 @@ svg {
 }
 
 .modal-label {
-  display: block;               
-  font-size: 12px;              
+  display: block;
+  font-size: 12px;
   line-height: 1.17;
-  letter-spacing: 0.04em;       
-  color: #8e8f99;               
-  margin-bottom: 4px;           
+  letter-spacing: 0.04em;
+  color: #8e8f99;
+  margin-bottom: 4px;
 }
-
 
 .modal-input {
   display: flex;
@@ -759,7 +758,7 @@ svg {
   border: 1px solid #4d5ae5;
   border-radius: 4px;
   padding: 8px 16px;
-  width: 100%; 
+  width: 100%;
   max-width: 360px;
 }
 
@@ -767,20 +766,6 @@ svg {
   fill: #2e2f42;
 }
 
-.form-field-textarea {
-  display: block;
-  width: 100%;
-  max-width: 360px;
-  height: 120px;
-  border: 1px solid rgba(46, 47, 66, 0.4);
-  border-radius: 4px;
-  padding: 8px 16px;
-  resize: none;
-  font-size: 12px;
-  line-height: 1.16;
-  letter-spacing: 0.04em;
-  outline: none;
-}
 .form-field-wrapper-checkbox {
   margin-top: 16px;
   margin-bottom: 24px;
@@ -796,12 +781,9 @@ svg {
   border: 1px solid rgba(46, 47, 66, 0.4);
   fill: transparent;
 
-  
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-              border 250ms cubic-bezier(0.4, 0, 0.2, 1),
-              fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-checkbox {
@@ -817,11 +799,10 @@ svg {
 }
 
 .checkbox:checked + .modal-checkbox .modal-checkbox-custom {
-  background-color: #404bbf; 
-  border: none;              
-  fill: #f4f4fd;             
+  background-color: #404bbf;
+  border: none;
+  fill: #f4f4fd;
 }
-
 
 .modal-submit-btn {
   display: block;
