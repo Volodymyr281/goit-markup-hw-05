@@ -588,8 +588,7 @@ a {
     0 2px 1px 0 rgba(0, 0, 0, 0.2);
   background-color: #fcfcfc;
   opacity: 1;
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-close-btn {
@@ -658,6 +657,9 @@ a {
 .form-field-wrapper {
   margin-bottom: 8px;
 }
+.form-field-wrapper-textarea {
+  margin-bottom: 16px;
+}
 
 .form-field-input-wrapper svg {
   position: absolute;
@@ -689,8 +691,9 @@ svg {
   border-radius: 4px;
   width: 100%;
   max-width: 360px;
-  height: 40px; /* ✅ тест вимагає саме height */
-  padding: 8px 16px 8px 40px; /* ✅ відступи під іконку */
+  height: 40px;
+  padding: 8px 16px 8px 40px;
+  padding-left: 38px;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
@@ -704,7 +707,6 @@ svg {
   width: 100%;
   max-width: 360px;
   height: 120px;
-  margin-bottom: 16px;
 
   font-size: 12px;
   line-height: 1.17;
