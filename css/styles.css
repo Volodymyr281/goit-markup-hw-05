@@ -618,12 +618,12 @@ a {
 
 .modal-submit-switch:hover,
 .modal-submit-switch:focus {
-  background-color: #31d0aa; /* ефект при наведенні */
+  background-color: #31d0aa;
 }
 
 .subscribe-icon {
-  margin-left: 16px; /* відступ від тексту */
-  fill: #ffffff; /* колір іконки */
+  margin-left: 16px;
+  fill: #ffffff;
 }
 
 /* backdrop */
