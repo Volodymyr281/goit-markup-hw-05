@@ -568,12 +568,23 @@ a {
 }
 
 .subscribe-input {
-  border: 1px solid #fff;
-  border-radius: 4px;
-  width: 264px;
-  height: 40px;
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  width: 264px; /* ширина */
+  height: 40px; /* висота */
+  border: 1px solid #ffffff; /* рамка */
+  background-color: transparent; /* прозорий фон */
+  font-size: 12px; /* розмір шрифту */
+  line-height: 2; /* міжрядковий інтервал */
+  letter-spacing: 0.04em; /* відстань між літерами */
+  padding-left: 16px; /* внутрішній відступ зліва */
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); /* тінь */
+  border-radius: 4px; /* скруглення кутів */
+  color: #ffffff; /* колір тексту */
 }
+
+.subscribe-input::placeholder {
+  color: #ffffff; /* білий колір тексту */
+}
+
 .footer-label {
   font-weight: 400;
   font-size: 12px;
@@ -583,29 +594,36 @@ a {
 }
 
 .modal-submit-switch {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 16px;
+  min-width: 165px; /* мінімальна ширина */
+  height: 40px; /* висота */
+  display: flex; /* для flex-розташування */
+  justify-content: center; /* горизонтальне вирівнювання */
+  align-items: center; /* вертикальне вирівнювання */
 
-  border-radius: 4px;
-  padding: 8px 24px;
-  background: #4d5ae5;
-  border: none;
-
-  font-weight: 500;
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
+  font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  color: #fff;
+  color: #ffffff;
 
-  fill: #fff;
+  cursor: pointer; /* курсор-покажчик */
+  background-color: #4d5ae5;
+  border: none;
+  border-radius: 4px;
+
+  fill: #ffffff; /* щоб іконка була білою */
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-submit-switch:hover,
 .modal-submit-switch:focus {
-  background-color: #31d0aa;
+  background-color: #31d0aa; /* ефект при наведенні */
+}
+
+.subscribe-icon {
+  margin-left: 16px; /* відступ від тексту */
+  fill: #ffffff; /* колір іконки */
 }
 
 /* backdrop */
