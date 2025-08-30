@@ -826,7 +826,7 @@ svg {
 
 .modal-label {
   display: block;
-  line-height: 1.17;
+  line-height: 1.16;
   font-size: 12px;
   letter-spacing: 0.04em;
   color: #8e8f99;
@@ -869,7 +869,7 @@ svg {
 
 .modal-checkbox {
   font-size: 12px;
-  line-height: 1.16667;
+  line-height: 1.16;
   letter-spacing: 0.04em;
   color: #8e8f99;
 }
